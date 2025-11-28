@@ -8,11 +8,11 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <title>AgroMETT</title>
+    <title>AGROMETT - Weather Intelligence for Sustainable Agriculture</title>
   </head>
   <body>
     <nav
-      class="z-10 flex justify-between fixed right-[50%] left-[16%] top-2 w-2/3 p-2 items-center rounded-lg border border-gray-300 bg-white drop-shadow-xl"
+      class="z-10 flex justify-between fixed right-[50%] left-[16%] top-2 w-2/3 p-2 items-center rounded-lg border border-[#FDCE28] bg-white drop-shadow-xl"
     >
       <div>
         <a href="index.html" class="py-4"
@@ -41,22 +41,23 @@
         >
         <a
           href="#contact"
-          class="transition-all p-2 px-4 rounded-full bg-[#7aaa31] hover:bg-[#608922] text-white"
+          class="transition-all p-2 px-4 rounded-full bg-[#7aaa31] hover:bg-[#608922] text-[#FDCE28]"
           >Contact</a
         >
       </div>
     </nav>
-    <main class="pt-24 space-y-4 bg-[#f9fdf1]">
-      <section class="hero flex items-center justify-center px-24 py-20">
-        <div class="flex flex-col">
+    <main class="space-y-4 bg-[#f9fdf1]">
+      <section class="relative pt-24 hero px-48 h-screen bg-[url('../images/sawah.jpg')] bg-cover bg-center">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="relative mt-40 z-10">
           <div>
-            <h1 class="text-6xl font-bold">
+            <h1 class="text-6xl font-bold text-white">
               Monitor your Local <br />
               <span class="text-[#7aaa31]">Environmental Conditions </span
               ><br />
               in Real Time
             </h1>
-            <p class="mt-2 text-gray-600">
+            <p class="mt-2 text-white">
               AgroMETT is an innovative, low-cost, AI-assisted smart weather
               intelligence system <br />
               specifically designed to help farmers monitor local environmental
@@ -67,17 +68,16 @@
           <div class="mt-4 flex gap-10">
             <a
               href="#"
-              class="p-4 transition-all hover:bg-[#608922] hover:scale-105 rounded-lg text-white bg-[#7aaa31]"
+              class="p-4 transition-all hover:bg-[#608922] hover:scale-105 rounded-lg text-[#FDCE28] bg-[#7aaa31]"
               >Explore AgroMETT</a
             >
             <a
               href="#"
-              class="p-4 transition-all hover:bg-[#7aaa31] hover:text-white rounded-lg text-[#7aaa31] border-2 border-[#7aaa31]"
+              class="p-4 transition-all hover:bg-[#FDCE28] hover:text-black rounded-lg text-[#FDCE28] border-2 border-[#FDCE28]"
               >About Product</a
             >
           </div>
         </div>
-        <img src="./images/Foto Product.png" alt="foto produk" width="800" />
       </section>
       <section class="team space-y-3 mt-10 px-48 py-20" id="team">
         <h1 class="text-center text-4xl font-bold mb-16">
@@ -140,7 +140,7 @@
       <section class="vision py-20 px-48">
         <h1 class="font-bold text-5xl text-center mb-16">Our Vision & Mission</h1>
         <div class="flex justify-center gap-10">
-          <div class="rounded-3xl shadow-lg p-10 bg-white w-1/2">
+          <div class="rounded-3xl shadow-lg p-10 bg-[#FDCE28] w-1/2">
             <h1 class="font-bold text-4xl mb-4">Vision</h1>
             <p class="text-gray-600">
               Becoming a reliable and ethical leading platform in providing
@@ -148,7 +148,7 @@
               agricultural productivity in Indonesia and surrounding areas.
             </p>
           </div>
-          <div class="rounded-3xl shadow-lg p-10 bg-white w-1/2">
+          <div class="rounded-3xl shadow-lg p-10 bg-[#FDCE28] w-1/2">
             <h1 class="font-bold text-4xl mb-4">Mission</h1>
             <ul class="list-disc space-y-2 text-gray-600">
               <li>
@@ -245,16 +245,16 @@
         </div>
         <div class="px-48 flex justify-center gap-10">
           <div class="p-10 rounded-3xl bg-[#7aaa31] text-white w-1/3 h-fit">
-            <h1 class="text-2xl font-bold mb-8">Get in Touch</h1>
+            <h1 class="text-2xl font-bold mb-8 text-[#FDCE28]">Get in Touch</h1>
             <div class="space-y-6">
               <div class="flex space-x-4">
                 <div
                   class="p-3 text-white bg-[#a7dd5773] flex w-fit rounded-lg items-center"
                 >
-                  <i class="bx bx-envelope text-xl"></i>
+                  <i class="bx bx-envelope text-xl text-[#FDCE28]"></i>
                 </div>
                 <div>
-                  <span class="font-bold -mb-4">Email</span>
+                  <span class="font-bold -mb-4 text-[#FDCE28]">Email</span>
                   <p>agromett.official@gmail.com</p>
                 </div>
               </div>
@@ -262,10 +262,10 @@
                 <div
                   class="p-3 text-white bg-[#a7dd5773] flex w-fit rounded-lg items-center"
                 >
-                  <i class="bx bxl-instagram text-xl"></i>
+                  <i class="bx bxl-instagram text-xl text-[#FDCE28]"></i>
                 </div>
                 <div>
-                  <span class="font-bold -mb-4">Instagram</span>
+                  <span class="font-bold -mb-4 text-[#FDCE28]">Instagram</span>
                   <p>@agromett</p>
                 </div>
               </div>
@@ -310,11 +310,11 @@
                 placeholder="Tell us about your needs..."
               ></textarea>
             </div>
-            <button class="w-full bg-[#7aaa31] text-white py-4 rounded-xl font-semibold hover:bg-[#608922] transition-all transform hover:scale-105 shadow-lg">Send Message</button>
+            <button class="w-full bg-[#7aaa31] text-[#FDCE28] py-4 rounded-xl font-semibold hover:bg-[#608922] transition-all transform hover:scale-105 shadow-lg">Send Message</button>
           </div>
         </div>
       </section>
-      <section class="partners px-24 py-20 w-screen">
+      <section class="partners px-24 py-20 w-screen bg-[#FDCE28]">
         <h1 class="text-3xl font-bold mb-16 text-center">Our Partners</h1>
         <div class="flex items-center place-content-center self-center gap-10">
           <img
@@ -338,11 +338,23 @@
         </div>
       </section>
       <section class="sdgs px-24 py-20">
-        <h1 class="text-center text-4xl mb-16 font-bold">We Support SDGs</h1>
+        <h1 class="text-center text-4xl mb-16 font-bold">Supporting SDGs</h1>
         <div class="flex justify-center gap-10">
-          <img src="./images/sdgs 2.png" alt="sdgs">
-          <img src="./images/sdgs 9.png" alt="sdgs">
-          <img src="./images/sdgs 13.png" alt="sdgs">
+          <div class="flex flex-col items-center gap-2 text-center w-56 bg-[#FDCE28] p-4 rounded-lg">
+            <img src="./images/sdgs 2.png" alt="sdgs" width="100">
+            <h1 class="font-bold text-lg">Zero Hunger</h1>
+            <p class="text-gray-600">Ending hunger by increasing agricultural productivity</p>
+          </div>
+          <div class="flex flex-col items-center gap-2 text-center w-56 bg-[#FDCE28] p-4 rounded-lg">            
+            <img src="./images/sdgs 9.png" alt="sdgs" width="100">
+            <h1 class="font-bold text-lg">Industry & Innovation</h1>
+            <p class="text-gray-600">Building infrastructure and encouraging agricultural innovation</p>
+          </div>
+          <div class="flex flex-col items-center gap-2 text-center w-56 bg-[#FDCE28] p-4 rounded-lg">            
+            <img src="./images/sdgs 13.png" alt="sdgs" width="100">
+            <h1 class="font-bold text-lg">Zero Hunger</h1>
+            <p class="text-gray-600">Fighting climate change through adaptive agriculture</p>
+          </div>
         </div>
       </section>
     </main>

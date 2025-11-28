@@ -7,14 +7,11 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-50: oklch(97.1% 0.013 17.38);
-    --color-green-50: oklch(98.2% 0.018 155.826);
-    --color-gray-100: oklch(96.7% 0.003 264.542);
     --color-gray-200: oklch(92.8% 0.006 264.531);
     --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-gray-600: oklch(44.6% 0.03 256.802);
     --color-gray-700: oklch(37.3% 0.034 259.733);
-    --color-gray-900: oklch(21% 0.034 264.665);
+    --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
     --text-sm: 0.875rem;
@@ -33,17 +30,13 @@
     --text-5xl--line-height: 1;
     --text-6xl: 3.75rem;
     --text-6xl--line-height: 1;
-    --text-8xl: 6rem;
-    --text-8xl--line-height: 1;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --radius-lg: 0.5rem;
     --radius-xl: 0.75rem;
     --radius-2xl: 1rem;
     --radius-3xl: 1.5rem;
-    --drop-shadow-lg: 0 4px 4px rgb(0 0 0 / 0.15);
     --drop-shadow-xl: 0 9px 7px rgb(0 0 0 / 0.1);
-    --drop-shadow-2xl: 0 25px 25px rgb(0 0 0 / 0.15);
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
@@ -199,11 +192,17 @@
   }
 }
 @layer utilities {
+  .absolute {
+    position: absolute;
+  }
   .fixed {
     position: fixed;
   }
   .relative {
     position: relative;
+  }
+  .inset-0 {
+    inset: calc(var(--spacing) * 0);
   }
   .top-2 {
     top: calc(var(--spacing) * 2);
@@ -214,8 +213,14 @@
   .left-\[16\%\] {
     left: 16%;
   }
+  .z-0 {
+    z-index: 0;
+  }
   .z-10 {
     z-index: 10;
+  }
+  .z-20 {
+    z-index: 20;
   }
   .container {
     width: 100%;
@@ -246,6 +251,9 @@
   }
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
+  }
+  .mt-40 {
+    margin-top: calc(var(--spacing) * 40);
   }
   .mr-4 {
     margin-right: calc(var(--spacing) * 4);
@@ -289,6 +297,9 @@
   .h-fit {
     height: fit-content;
   }
+  .h-screen {
+    height: 100vh;
+  }
   .w-1 {
     width: calc(var(--spacing) * 1);
   }
@@ -306,6 +317,9 @@
   }
   .w-2\/3 {
     width: calc(2/3 * 100%);
+  }
+  .w-56 {
+    width: calc(var(--spacing) * 56);
   }
   .w-fit {
     width: fit-content;
@@ -345,6 +359,9 @@
   }
   .justify-center {
     justify-content: center;
+  }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
   }
   .gap-3 {
     gap: calc(var(--spacing) * 3);
@@ -448,6 +465,9 @@
   .border-\[\#7aaa31\] {
     border-color: #7aaa31;
   }
+  .border-\[\#FDCE28\] {
+    border-color: #FDCE28;
+  }
   .border-gray-200 {
     border-color: var(--color-gray-200);
   }
@@ -456,6 +476,9 @@
   }
   .bg-\[\#7aaa31\] {
     background-color: #7aaa31;
+  }
+  .bg-\[\#FDCE28\] {
+    background-color: #FDCE28;
   }
   .bg-\[\#a7dd5773\] {
     background-color: #a7dd5773;
@@ -466,8 +489,32 @@
   .bg-\[\#f9fdf1\] {
     background-color: #f9fdf1;
   }
+  .bg-black {
+    background-color: var(--color-black);
+  }
   .bg-white {
     background-color: var(--color-white);
+  }
+  .bg-\[url\(\'\.\.\/images\/sawah\.jpg\'\)\] {
+    background-image: url('../images/sawah.jpg');
+  }
+  .bg-\[url\(\'\.\/images\/sawah\.jpg\'\)\] {
+    background-image: url('./images/sawah.jpg');
+  }
+  .bg-\[url\(\'https\:\/\/img\.freepik\.com\/free-photo\/closeup-shot-rice-plant-sunset-with-plantation-background_181624-42264\.jpg\?semt\=ais_incoming\&w\=740\&q\=80\'\)\] {
+    background-image: url('https://img.freepik.com/free-photo/closeup-shot-rice-plant-sunset-with-plantation-background_181624-42264.jpg?semt=ais_incoming&w=740&q=80');
+  }
+  .bg-\[url\(\'https\:\/\/img\.freepik\.com\/free-photo\/golden-wheat-fields-glow-sunset-generated-by-ai_188544-44464\.jpg\?semt\=ais_hybrid\&w\=740\&q\=80\'\)\] {
+    background-image: url('https://img.freepik.com/free-photo/golden-wheat-fields-glow-sunset-generated-by-ai_188544-44464.jpg?semt=ais_hybrid&w=740&q=80');
+  }
+  .bg-\[url\(\'https\:\/\/pvhardware\.com\/wp-content\/uploads\/2025\/09\/AgroPVH-agrivoltaic-solutions-1536x864\.jpg\'\)\] {
+    background-image: url('https://pvhardware.com/wp-content/uploads/2025/09/AgroPVH-agrivoltaic-solutions-1536x864.jpg');
+  }
+  .bg-cover {
+    background-size: cover;
+  }
+  .bg-center {
+    background-position: center;
   }
   .p-2 {
     padding: calc(var(--spacing) * 2);
@@ -510,6 +557,24 @@
   }
   .py-20 {
     padding-block: calc(var(--spacing) * 20);
+  }
+  .py-48 {
+    padding-block: calc(var(--spacing) * 48);
+  }
+  .py-52 {
+    padding-block: calc(var(--spacing) * 52);
+  }
+  .py-64 {
+    padding-block: calc(var(--spacing) * 64);
+  }
+  .py-72 {
+    padding-block: calc(var(--spacing) * 72);
+  }
+  .py-80 {
+    padding-block: calc(var(--spacing) * 80);
+  }
+  .py-96 {
+    padding-block: calc(var(--spacing) * 96);
   }
   .pt-24 {
     padding-top: calc(var(--spacing) * 24);
@@ -560,6 +625,9 @@
   .text-\[\#7aaa31\] {
     color: #7aaa31;
   }
+  .text-\[\#FDCE28\] {
+    color: #FDCE28;
+  }
   .text-gray-600 {
     color: var(--color-gray-600);
   }
@@ -571,6 +639,9 @@
   }
   .underline {
     text-decoration-line: underline;
+  }
+  .opacity-50 {
+    opacity: 50%;
   }
   .shadow-lg {
     --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
@@ -617,6 +688,13 @@
       }
     }
   }
+  .hover\:bg-\[\#FDCE28\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #FDCE28;
+      }
+    }
+  }
   .hover\:font-bold {
     &:hover {
       @media (hover: hover) {
@@ -629,6 +707,13 @@
     &:hover {
       @media (hover: hover) {
         color: #608922;
+      }
+    }
+  }
+  .hover\:text-black {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-black);
       }
     }
   }
