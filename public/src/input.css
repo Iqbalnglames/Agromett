@@ -1,1 +1,25 @@
 @import "tailwindcss";
+@layer utilities {
+  .scroll-fade {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.7s ease-out;
+  }
+
+  .scroll-show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .menu-show {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 0.3 ease-out;
+  }
+
+  .menu-closed {
+    opacity: 0;
+    transform: translateX(-10);
+    transition: all 0.3 ease-out;
+  }
+}
