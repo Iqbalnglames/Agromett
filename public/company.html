@@ -8,19 +8,37 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <title>AgroMETT</title>
+    <title>AGROMETT - Weather Intelligence for Sustainable Agriculture</title>
   </head>
 
   <body>
-    <nav
-      class="z-10 flex justify-between fixed right-[50%] left-[16%] top-2 w-2/3 p-2 items-center rounded-lg border border-gray-300 bg-white drop-shadow-xl"
+    <div id="menu-list" class="hidden transition-all lg:hidden z-40 p-5 inset-0 -right-2 -top-2 bg-[#608922] fixed h-[110vh] w-screen flex-col gap-5 text-[#FDCE28] font-bold">
+      <div class="flex justify-end">
+        <button id="close" class="w-fit"><i class='bx bx-x text-5xl'></i></button>
+      </div>
+          <div class="flex flex-col gap-7 scroll-fade">
+            <a href="index.html">Home</a>
+            <a href="company.html">About Us</a>
+            <a href="index.html">Product</a>
+            <a href="#team">Team</a>
+            <a href="index.html">News</a>
+            <a href="index.html">Contact</a>
+          </div>
+        </div>
+     <nav
+      class="z-20 flex justify-between fixed right-0 left-0 lg:right-[50%] lg:left-[16%] top-2 lg:w-2/3 w-screen p-2 items-center rounded-lg border border-[#FDCE28] bg-white drop-shadow-xl"
     >
       <div>
         <a href="index.html" class="py-4"
           ><img src="./images/Agormett - logo.png" alt="logo" width="90"
         /></a>
       </div>
-      <div class="flex gap-8 mr-6 items-center text-gray-600">
+        <button id="menu" class="lg:hidden space-y-1">
+          <div class="h-1 w-8 rounded bg-[#608922]"></div>
+          <div class="h-1 w-8 rounded bg-[#608922]"></div>
+          <div class="h-1 w-8 rounded bg-[#608922]"></div>
+        </button>
+      <div class="hidden lg:flex lg:gap-8 lg:mr-6 items-center text-gray-600">
         <a
           class="hover:text-gray-700 hover:font-bold transition-all"
           href="index.html"
@@ -37,31 +55,31 @@
         <a class="hover:text-gray-700 hover:font-bold transition-all" href="#team"
           >Team</a
         >
-        <a class="hover:text-gray-700 hover:font-bold transition-all" href="index.html#news"
+        <a class="hover:text-gray-700 hover:font-bold transition-all" href="#news"
           >News</a
         >
         <a
           href="#contact"
-          class="transition-all p-2 px-4 rounded-full bg-[#7aaa31] hover:bg-[#608922] text-white"
+          class="transition-all p-2 px-4 rounded-full bg-[#7aaa31] hover:bg-[#608922] text-[#FDCE28]"
           >Contact</a
         >
       </div>
     </nav>
-    <main class="pt-24 space-y-4 bg-[#f9fdf1]">
+    <main class="space-y-4 bg-[#f9fdf1]">
       
     </main>
-    <footer class="py-16 bg-white border-t border-gray-200">
+     <footer class="py-16 bg-white border-t border-gray-200">
         <div class="grid md:grid-cols-4 gap-12 mb-12 items-center container mx-auto px-6">
           <div class="md:col-span-2">
             <img src="./images/Agormett - logo.png" alt="logo" width="150" />
-            <p class="mt-10 text-gray-600">
+            <p class="lg:mt-10 mt-2 text-gray-600">
               AgroMETT is an innovative, low-cost, AI-assisted smart weather
               intelligence system specifically designed to help farmers monitor
               local environmental conditions in real time and make better
               agricultural decisions.
             </p>
-            <div class="mt-10 flex gap-4">
-              <a href="https://www.instagram.com/agromett.id/" target="_blank" class="transition-all p-3 text-center flex w-fit items-center rounded-lg text-[#7aaa31] hover:bg-[#7aaa31] hover:text-white">
+            <div class="lg:mt-10 mt-2 flex gap-4">
+              <a href="https://www.instagram.com/agromett.id/" target="_blank" class="transition-all p-3 text-center flex w-fit items-center rounded-lg text-[#7aaa31] hover:bg-[#7aaa31] hover:text-[#FDCE28]">
                 <i class="bx bxl-instagram text-2xl"></i>
               </a>
             </div>
@@ -90,4 +108,38 @@
           </div>
       </footer>
   </body>
+   <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const menuBtn = document.getElementById('menu')
+      const closeBtn = document.getElementById('close')
+      const menuList = document.getElementById('menu-list')
+      const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('scroll-show')
+        } else {
+          entry.target.classList.remove('scroll-show')
+        }
+      })
+    }, {threshold: 0.2})
+
+    document.querySelectorAll('.scroll-fade').forEach((el) => observer.observe(el))
+
+      menuBtn.addEventListener('click', () => {
+        menuList.classList.remove('hidden')
+        setTimeout(() => {
+          menuList.classList.add('menu-open')
+          menuList.classList.remove('menu-closed')
+        }, 10)
+      })
+      closeBtn.addEventListener('click', () => {
+        menuList.classList.remove('menu-open')
+        setTimeout(() => {
+          menuList.classList.add('hidden')
+        }, 300)
+        menuList.classList.add('menu-closed')
+      })
+      
+    })
+  </script>
 </html>
