@@ -1,456 +1,410 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/output.css" />
-    <link rel="stylesheet" href="./src/input.css" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <title>AGROMETT - Weather Intelligence for Sustainable Agriculture</title>
-  </head>
-  <body>
-    <div id="menu-list" class="hidden transition-all lg:hidden z-40 p-5 inset-0 -right-2 -top-2 bg-[#608922] fixed h-[110vh] w-screen flex-col gap-5 text-[#FDCE28] font-bold">
-      <div class="flex justify-end">
-        <button id="close" class="w-fit"><i class='bx bx-x text-5xl'></i></button>
-      </div>
-          <div class="flex flex-col gap-7 scroll-fade">
-            <a href="index.html">Home</a>
-            <a href="company.html">About Us</a>
-            <a href="index.html">Product</a>
-            <a href="#team">Team</a>
-            <a href="index.html">News</a>
-            <a href="index.html">Contact</a>
-          </div>
-        </div>
-    <nav
-      class="z-20 flex justify-between fixed right-0 left-0 lg:right-[50%] lg:left-[16%] top-2 lg:w-2/3 w-screen p-2 items-center rounded-lg border border-[#FDCE28] bg-white drop-shadow-xl"
-    >
-      <div>
-        <a href="index.html" class="py-4"
-          ><img src="./images/Agormett - logo.png" alt="logo" width="90"
-        /></a>
-      </div>
-        <button id="menu" class="lg:hidden space-y-1">
-          <div class="h-1 w-8 rounded bg-[#608922]"></div>
-          <div class="h-1 w-8 rounded bg-[#608922]"></div>
-          <div class="h-1 w-8 rounded bg-[#608922]"></div>
-        </button>
-      <div class="hidden lg:flex lg:gap-8 lg:mr-6 items-center text-gray-600">
-        <a
-          class="hover:text-gray-700 hover:font-bold transition-all"
-          href="index.html"
-          >Home</a
-        >
-        <a
-          class="hover:text-gray-700 hover:font-bold transition-all"
-          href="company.html"
-          >About Us</a
-        >
-        <a class="hover:text-gray-700 hover:font-bold transition-all" href="#"
-          >Product</a
-        >
-        <a class="hover:text-gray-700 hover:font-bold transition-all" href="#team"
-          >Team</a
-        >
-        <a class="hover:text-gray-700 hover:font-bold transition-all" href="#news"
-          >News</a
-        >
-        <a
-          href="#contact"
-          class="transition-all p-2 px-4 rounded-full bg-[#7aaa31] hover:bg-[#608922] text-[#FDCE28]"
-          >Contact</a
-        >
-      </div>
-    </nav>
-    <main class="space-y-4 bg-[#f9fdf1]">
-      <section class="hero relative lg:pt-24 pt-10 hero p-4 lg:px-48 h-screen bg-[url('../images/sawah.jpg')] bg-cover bg-center">
-        <div class="absolute inset-0 bg-black opacity-50"></div>
-        <div class="relative mt-40 z-10 scroll-fade">
-          <div>
-            <h1 class="lg:text-6xl text-5xl text-center lg:text-left font-bold text-white">
-              Monitor your Local <br />
-              <span class="text-[#7aaa31] text-center mr-2">Environmental Conditions </span
-              ><br />
-              in Real Time
-            </h1>
-            <p class="text-center lg:text-left mt-2 text-white">
-              AgroMETT is an innovative, low-cost, AI-assisted smart weather
-              intelligence system <br />
-              specifically designed to help farmers monitor local environmental
-              conditions <br />
-              in real time and make better agricultural decisions.
-            </p>
-          </div>
-          <div class="mt-4 flex justify-center lg:justify-start gap-10">
-            <a
-              href="#team"
-              class="p-4 transition-all hover:bg-[#608922] hover:scale-105 rounded-lg text-[#FDCE28] bg-[#7aaa31]"
-              >Explore AgroMETT</a
-            >
-            <a
-              href="#"
-              class="p-4 transition-all hover:bg-[#FDCE28] hover:text-black rounded-lg text-[#FDCE28] border-2 border-[#FDCE28]"
-              >About Product</a
-            >
-          </div>
-        </div>
-      </section>
-      <section id="team" class="space-y-3 mt-10 px-4 lg:px-48 lg:py-20 py-6 scroll-fade">
-        <h1 class="text-center text-4xl font-bold mb-16">
-          Meet The AgroMETT Team
-        </h1>
-        <div class="flex justify-center rounded-2xl">
-          <div
-            class="rounded-2xl bg-[#f2f8e6] drop-shadow-xl w-fit overflow-hidden mb-10"
-          >
-            <img src="./images/Foto Bersama.png" alt="foto bersama" class="" />
-          </div>
-        </div>
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:px-48 text-white">
-          <div class="transition-all gap-1 shadow-lg rounded-lg p-10 w-fit text-center flex flex-col items-center bg-[#7aaa31] hover:scale-105">
-            <div class="rounded-full relative overflow-hidden shadow-lg">
-              <img src="./images/athala.png" alt="atha" width="200" />
-            </div>
-            <h1 class="font-bold text-xl text-[#f5c311]">Athala Deandra Putra Mahade</h1>
-            <h1 class="font-bold">Chief Executive Officer</h1>
-            <div class="flex items-center text-[#FDCE28] gap-1.5">
-              <i class='bx bxl-instagram text-2xl'></i>
-              <p class="w-fit bg-[#608922]  p-1 rounded">@atha.deandra</p>
-            </div>
-            <p>leading the company's strategic direction, making top-level decisions, representing the company to stakeholder</p>
-          </div>
-          <div class="transition-all shadow-lg rounded-lg p-10 w-fit text-center flex flex-col items-center bg-[#7aaa31] hover:scale-105 gap-1">
-            <div class="rounded-full relative overflow-hidden shadow-lg">
-              <img src="./images/govind.png" alt="govind" width="200" />
-            </div>
-            <h1 class="font-bold text-xl text-[#FDCE28]">Desta Govinda Tama</h1>
-            <h1 class="font-bold">Chief Financial Officer</h1>
-            <div class="flex items-center text-[#FDCE28] gap-1.5">
-              <i class='bx bxl-instagram text-2xl'></i>
-              <p class="w-fit bg-[#608922]  p-1 rounded">@desgovin</p>
-            </div>
-            <p>Managing all financial affairs of a company, including budget planning, financial reporting, spending supervision and financial risk management.</p>
-          </div>
-          <div class="transition-all shadow-lg rounded-lg p-10 w-fit text-center flex flex-col items-center bg-[#7aaa31] hover:scale-105 gap-1">
-            <div class="rounded-full relative overflow-hidden shadow-lg">
-              <img src="./images/nareswari.png" alt="nareswari" width="200" />
-            </div>
-            <h1 class="font-bold text-xl text-[#FDCE28]">Nareswari Ayuningtyas</h1>
-            <h1 class="font-bold">Chief Marketing Officer</h1>
-            <div class="flex items-center text-[#FDCE28] gap-1.5">
-              <i class='bx bxl-instagram text-2xl'></i>
-              <p class="w-fit bg-[#608922]  p-1 rounded">@naireshaa</p>
-            </div>
-            <p>regulate market research, communication strategies, digital campaigns, and relationships with customers to increase sales and loyalty.</p>
-          </div>
-          <div class="transition-all shadow-lg rounded-lg p-10 w-fit text-center flex flex-col items-center bg-[#7aaa31] hover:scale-105 gap-1">
-            <div class="rounded-full relative overflow-hidden shadow-lg">
-              <img src="./images/arsya.png" alt="arsya" width="200" />
-            </div>
-            <h1 class="font-bold text-xl text-[#FDCE28]">Faiz Akbar Aryasatya</h1>
-            <h1 class="font-bold">Chief Technology Officer</h1>
-            <div class="flex items-center text-[#FDCE28] gap-1.5">
-              <i class='bx bxl-instagram text-2xl'></i>
-              <p class="w-fit bg-[#608922]  p-1 rounded">@fizhing29</p>
-            </div>
-            <p>Set the directions and development of the company's technology. The CTO led the engineering team, ensuring that the system and infrastructure are running safely, efficiently and innovative. </p>
-          </div>
-          <div class="transition-all shadow-lg rounded-lg p-10 w-fit text-center flex flex-col items-center bg-[#7aaa31] hover:scale-105 gap-1">
-            <div class="rounded-full relative overflow-hidden shadow-lg">
-              <img src="./images/beni.png" alt="beni" width="200" />
-            </div>
-            <h1 class="font-bold text-xl text-[#FDCE28]">Maynard Beni</h1>
-            <h1 class="font-bold">Chief Product Officer</h1>
-            <div class="flex items-center text-[#FDCE28] gap-1.5">
-              <i class='bx bxl-instagram text-2xl'></i>
-              <p class="w-fit bg-[#608922]  p-1 rounded">@benistefano_</p>
-            </div>
-            <p>Manage product development from idea to launch. CPO determines product, features, and user experience (user experience) strategies.</p>
-          </div>
-          <div class="transition-all shadow-lg rounded-lg p-10 w-fit text-center flex flex-col items-center bg-[#7aaa31] hover:scale-105 gap-1">
-            <div class="rounded-full relative overflow-hidden shadow-lg">
-              <img src="./images/hassan.png" alt="hassan" width="200" />
-            </div>
-            <h1 class="font-bold text-xl text-[#FDCE28]">Hassan Marsa T</h1>
-            <h1 class="font-bold">Chief Operating Officer</h1>
-            <div class="flex items-center text-[#FDCE28] gap-1.5">
-              <i class='bx bxl-instagram text-2xl'></i>
-              <p class="w-fit bg-[#608922]  p-1 rounded">@hassanmarsa_</p>
-            </div>
-            <p>Responsible for the daily operations of the company to run efficiently according to the target and ensures that the CEO's strategy is carried out effectively in the field.</p>
-          </div>
-        </div>
-      </section>
-      <section id="vision" class="lg:py-20 lg:px-48 px-2 py-6 scroll-fade">
-        <h1 class="font-bold text-5xl text-center mb-16 scroll-fade">Our Vision & Mission</h1>
-        <div class="flex lg:flex-row flex-col justify-center gap-10">
-          <div class="rounded-3xl shadow-lg p-10 bg-[#FDCE28] lg:w-1/2 scroll-fade">
-            <h1 class="font-bold text-4xl mb-4 scroll-fade">Vision</h1>
-            <p class="text-gray-600 scroll-fade">
-              Becoming a reliable and ethical leading platform in providing
-              AI-based weather and analytics data to increase sustainable
-              agricultural productivity in Indonesia and surrounding areas.
-            </p>
-          </div>
-          <div class="rounded-3xl shadow-lg p-10 bg-[#FDCE28] lg:w-1/2 scroll-fade">
-            <h1 class="font-bold text-4xl mb-4 scroll-fade">Mission</h1>
-            <ul class="list-disc space-y-2 text-gray-600 scroll-fade">
-              <li>
-                Provides High Precision Data: Developing and operating the
-                Agromett weather station networks capable of collecting,
-                analyzing, and predicting real-time agricultural micro-time
-                conditions and hiperlokal with tested accuracy.
-              </li>
-              <li>
-                Encouraging the Intelligent Decision Making: Converting raw data
-                into actionable agronomic recommendations (for example, an
-                optimal irrigation schedule, an early warning of pests/diseases,
-                and best planting time) for farmers through an intuitive
-                interface.
-              </li>
-              <li>
-                Improving Farmers’ Efficiency and Productivity: Helping
-                farmers in saving resources (water, fertilizers, pesticides) and
-                minimizing the risk of crop failure due to extreme weather, thus
-                increasing their harvest and profitability.
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <section id="news" class="lg:px-48 px-2 lg:py-20 py-10 scroll-fade">
-        <div class="mb-16 space-y-4">
-          <h1 class="font-bold text-4xl text-center">Updated News</h1>
-          <p class="text-gray-600 text-center text-lg">Stay Updated with Agromett</p>
-        </div>
-        <div class="grid lg:grid-cols-3 grid-cols-1 lg:items-center lg:place-content-center lg:gap-28 gap-10">
-          <div class="rounded-lg w-1/1 relative overflow-hidden shadow-lg bg-white">
-              <img src="./images/alat-aws.png" alt="aws">
-              <div class="p-6 flex flex-col gap-3">
-                <h1 class="text-gray-600">November 28, 2025</h1>
-                <h1 class="font-bold text-lg">Stasiun Cuaca Otomatis Bantu Pertanian Hadapi Perubahan Iklim</h1>
-                <p class="text-gray-600">AWS membantu petani menghadapi musim tak menentu dengan data suhu, hujan, dan angin yang akurat.</p>
-                <a href="aws.html" class="transition-all text-[#7aaa31] font-bold hover:text-[#608922]">Read More →</a>
-              </div>
-          </div>
-          <div class="rounded-lg w-1/1 relative overflow-hidden shadow-lg bg-white">
-              <img src="./images/alat-aws.png" alt="aws">
-              <div class="p-6 flex flex-col gap-3">
-                <h1 class="text-gray-600">November 28, 2025</h1>
-                <h1 class="font-bold text-lg">Stasiun Cuaca Otomatis Bantu Pertanian Hadapi Perubahan Iklim</h1>
-                <p class="text-gray-600">AWS membantu petani menghadapi musim tak menentu dengan data suhu, hujan, dan angin yang akurat.</p>
-                <a href="aws.html" class="transition-all text-[#7aaa31] font-bold hover:text-[#608922]">Read More →</a>
-              </div>
-          </div>
-          <div class="rounded-lg w-1/1 relative overflow-hidden shadow-lg bg-white">
-              <img src="./images/alat-aws.png" alt="aws">
-              <div class="p-6 flex flex-col gap-3">
-                <h1 class="text-gray-600">November 28, 2025</h1>
-                <h1 class="font-bold text-lg">Stasiun Cuaca Otomatis Bantu Pertanian Hadapi Perubahan Iklim</h1>
-                <p class="text-gray-600">AWS membantu petani menghadapi musim tak menentu dengan data suhu, hujan, dan angin yang akurat.</p>
-                <a href="aws.html" class="transition-all text-[#7aaa31] font-bold hover:text-[#608922]">Read More →</a>
-              </div>
-          </div>
-          <div class="rounded-lg w-1/1 relative overflow-hidden shadow-lg bg-white">
-              <img src="./images/alat-aws.png" alt="aws">
-              <div class="p-6 flex flex-col gap-3">
-                <h1 class="text-gray-600">November 28, 2025</h1>
-                <h1 class="font-bold text-lg">Stasiun Cuaca Otomatis Bantu Pertanian Hadapi Perubahan Iklim</h1>
-                <p class="text-gray-600">AWS membantu petani menghadapi musim tak menentu dengan data suhu, hujan, dan angin yang akurat.</p>
-                <a href="aws.html" class="transition-all text-[#7aaa31] font-bold hover:text-[#608922]">Read More →</a>
-              </div>
-          </div>
-          <div class="rounded-lg w-1/1 relative overflow-hidden shadow-lg bg-white">
-              <img src="./images/alat-aws.png" alt="aws">
-              <div class="p-6 flex flex-col gap-3">
-                <h1 class="text-gray-600">November 28, 2025</h1>
-                <h1 class="font-bold text-lg">Stasiun Cuaca Otomatis Bantu Pertanian Hadapi Perubahan Iklim</h1>
-                <p class="text-gray-600">AWS membantu petani menghadapi musim tak menentu dengan data suhu, hujan, dan angin yang akurat.</p>
-                <a href="aws.html" class="transition-all text-[#7aaa31] font-bold hover:text-[#608922]">Read More →</a>
-              </div>
-          </div>
-          <div class="rounded-lg w-1/1 relative overflow-hidden shadow-lg bg-white">
-              <img src="./images/alat-aws.png" alt="aws">
-              <div class="p-6 flex flex-col gap-3">
-                <h1 class="text-gray-600">November 28, 2025</h1>
-                <h1 class="font-bold text-lg">Stasiun Cuaca Otomatis Bantu Pertanian Hadapi Perubahan Iklim</h1>
-                <p class="text-gray-600">AWS membantu petani menghadapi musim tak menentu dengan data suhu, hujan, dan angin yang akurat.</p>
-                <a href="aws.html" class="transition-all text-[#7aaa31] font-bold hover:text-[#608922]">Read More →</a>
-              </div>
-          </div>
-        </div>
-      </section>
-      <section itemid="get-touch" class="lg:py-20 py-6 scroll-fade" id="contact">
-        <div class="text-center mb-16">
-          <h1 class="text-3xl font-bold mb-4">
-            Ready to Monitor your Environmental Conditions?
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./src/output.css" />
+  <link rel="stylesheet" href="./src/input.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <title>AGROMETT - Weather Intelligence for Sustainable Agriculture</title>
+</head>
+
+<body>
+  <div id="menu-list"
+    class="hidden transition-all xl:hidden z-40 p-5 inset-0 -right-2 -top-2 bg-[#608922] fixed h-[110vh] w-screen flex-col gap-5 text-[#FDCE28] font-bold">
+    <div class="flex justify-end">
+      <button id="close" class="w-fit"><i class='bx bx-x text-5xl'></i></button>
+    </div>
+    <div class="flex flex-col gap-7 scroll-fade">
+      <a href="index.html">Home</a>
+      <a href="company.html">About Us</a>
+      <a href="product.html">Product</a>
+      <a href="#team">Team</a>
+      <a href="index.html">News</a>
+      <a href="index.html">Contact</a>
+    </div>
+  </div>
+  <nav
+    class="z-20 flex justify-between fixed right-0 left-0 xl:right-[50%] xl:left-[16%] top-2 xl:w-2/3 w-screen p-2 items-center rounded-lg border border-[#FDCE28] bg-white drop-shadow-xl">
+    <div>
+      <a href="index.html" class="py-4"><img src="./images/Agormett - logo.png" alt="logo" width="90" /></a>
+    </div>
+    <button id="menu" class="xl:hidden space-y-1">
+      <div class="h-1 w-8 rounded bg-[#608922]"></div>
+      <div class="h-1 w-8 rounded bg-[#608922]"></div>
+      <div class="h-1 w-8 rounded bg-[#608922]"></div>
+    </button>
+    <div class="hidden xl:flex xl:gap-8 xl:mr-6 items-center text-gray-600">
+      <a class="hover:text-gray-700 hover:font-bold transition-all" href="index.html">Home</a>
+      <a class="hover:text-gray-700 hover:font-bold transition-all" href="company.html">About Us</a>
+      <a class="hover:text-gray-700 hover:font-bold transition-all" href="product.html">Product</a>
+      <a class="hover:text-gray-700 hover:font-bold transition-all" href="#team">Team</a>
+      <a class="hover:text-gray-700 hover:font-bold transition-all" href="#news">News</a>
+      <a href="#contact"
+        class="transition-all p-2 px-4 rounded-full bg-[#7aaa31] hover:bg-[#608922] text-[#FDCE28]">Contact</a>
+    </div>
+  </nav>
+  <main class="space-y-4 bg-[#f9fdf1]">
+    <section
+      class="hero relative xl:pt-24 pt-10 hero p-4 xl:px-48 h-screen bg-[url('../images/sawah.jpg')] bg-cover bg-center">
+      <div class="absolute inset-0 bg-black opacity-50"></div>
+      <div class="relative mt-40 z-10 scroll-fade">
+        <div>
+          <h1 class="xl:text-6xl text-5xl text-center xl:text-left font-bold text-white">
+            Monitor your Local <br />
+            <span class="text-[#7aaa31] text-center mr-2">Environmental Conditions </span><br />
+            in Real Time
           </h1>
-          <p class="text-gray-600 text-lg">Let's Discuss with Us</p>
+          <p class="text-center xl:text-left mt-2 text-white">
+            AgroMETT is an innovative, low-cost, AI-assisted smart weather
+            intelligence system <br />
+            specifically designed to help farmers monitor local environmental
+            conditions <br />
+            in real time and make better agricultural decisions.
+          </p>
         </div>
-        <div class="lg:px-48 p-2 flex flex-col lg:flex-row justify-center gap-10">
-          <div class="p-10 rounded-3xl bg-[#7aaa31] text-white lg:w-1/3 h-fit">
-            <h1 class="text-2xl font-bold mb-8 text-[#FDCE28]">Get in Touch</h1>
-            <div class="space-y-6">
-              <div class="flex space-x-4">
-                <div
-                  class="p-3 text-white bg-[#a7dd5773] flex w-fit rounded-lg items-center"
-                >
-                  <i class="bx bx-envelope text-xl text-[#FDCE28]"></i>
-                </div>
-                <div>
-                  <span class="font-bold -mb-4 text-[#FDCE28]">Email</span>
-                  <p>agromett.official@gmail.com</p>
-                </div>
-              </div>
-              <div class="flex space-x-4">
-                <div
-                  class="p-3 text-white bg-[#a7dd5773] flex w-fit rounded-lg items-center"
-                >
-                  <i class="bx bxl-instagram text-xl text-[#FDCE28]"></i>
-                </div>
-                <div>
-                  <span class="font-bold -mb-4 text-[#FDCE28]">Instagram</span>
-                  <p>@agromett</p>
-                </div>
-              </div>
-            </div>
+        <div class="mt-4 flex justify-center xl:justify-start gap-10">
+          <a href="#team"
+            class="p-4 transition-all hover:bg-[#608922] hover:scale-105 rounded-lg text-[#FDCE28] bg-[#7aaa31]">Explore
+            AgroMETT</a>
+          <a href="product.html"
+            class="p-4 transition-all hover:bg-[#FDCE28] hover:text-black rounded-lg text-[#FDCE28] border-2 border-[#FDCE28]">About
+            Product</a>
+        </div>
+      </div>
+    </section>
+    <section id="team" class="space-y-3 mt-10 px-4 xl:px-48 xl:py-20 py-6 scroll-fade">
+      <h1 class="text-center text-4xl font-bold mb-16 text-gray-600">
+        Meet The AgroMETT Team
+      </h1>
+      <div class="flex justify-center rounded-2xl">
+        <div class="rounded-2xl bg-[#f2f8e6] drop-shadow-xl w-fit overflow-hidden mb-10">
+          <img src="./images/Foto Bersama.png" alt="foto bersama" class="" />
+        </div>
+      </div>
+      <div class="grid grid-cols-1 xl:grid-cols-3 gap-10 xl:px-10 text-white">
+        <div
+          class="transition-all gap-1 shadow-lg rounded-lg p-10 w-auto text-center flex flex-col items-center bg-[#7aaa31] hover:scale-105">
+          <div class="rounded-full relative overflow-hidden shadow-lg">
+            <img src="./images/athala.png" alt="atha" width="200" />
           </div>
-          <div class="rounded-3xl shadow-lg p-10 bg-white space-y-6">
-            <div class="grid md:grid-cols-2 gap-6">
-              <div class="">
-                <label
-                  for="name"
-                  class="block text-sm font-semibold text-gray-700 mb-2"
-                  >Name</label
-                >
-                <input
-                  class="w-full px-4 py-3 border border-gray-300 rounded-xl"
-                  type="text"
-                />
-              </div>
-              <div class="">
-                <label
-                  for="name"
-                  class="block text-sm font-semibold text-gray-700 mb-2"
-                  >Email</label
-                >
-                <input
-                  type="text"
-                  class="w-full px-4 py-3 border border-gray-300 rounded-xl"
-                />
-              </div>
-            </div>
-            <div class="">
-              <label
-                for="name"
-                class="block text-sm font-semibold text-gray-700 mb-2"
-                >Message</label
-              >
-              <textarea
-                id="message"
-                rows="5"
-                required=""
-                class="w-full px-4 py-3 border border-gray-300 rounded-xl"
-                placeholder="Tell us about your needs..."
-              ></textarea>
-            </div>
-            <button class="w-full bg-[#7aaa31] text-[#FDCE28] py-4 rounded-xl font-semibold hover:bg-[#608922] transition-all transform hover:scale-105 shadow-lg">Send Message</button>
+          <h1 class="font-bold text-xl text-[#f5c311]">Athala Deandra Putra Mahade</h1>
+          <h1 class="font-bold">Chief Executive Officer</h1>
+          <div class="flex items-center text-[#FDCE28] gap-1.5">
+            <i class='bx bxl-instagram text-2xl'></i>
+            <p class="w-fit bg-[#608922]  p-1 rounded">@atha.deandra</p>
+          </div>
+          <p>leading the company's strategic direction, making top-level decisions, representing the company to
+            stakeholder</p>
+        </div>
+        <div
+          class="transition-all shadow-lg rounded-lg p-10 w-auto text-center flex flex-col items-center bg-[#7aaa31] hover:scale-105 gap-1">
+          <div class="rounded-full relative overflow-hidden shadow-lg">
+            <img src="./images/govind.png" alt="govind" width="200" />
+          </div>
+          <h1 class="font-bold text-xl text-[#FDCE28]">Desta Govinda Tama</h1>
+          <h1 class="font-bold">Chief Financial Officer</h1>
+          <div class="flex items-center text-[#FDCE28] gap-1.5">
+            <i class='bx bxl-instagram text-2xl'></i>
+            <p class="w-fit bg-[#608922]  p-1 rounded">@desgovin</p>
+          </div>
+          <p>Managing all financial affairs of a company, including budget planning, financial reporting, spending
+            supervision and financial risk management.</p>
+        </div>
+        <div
+          class="transition-all shadow-lg rounded-lg p-10 w-auto text-center flex flex-col items-center bg-[#7aaa31] hover:scale-105 gap-1">
+          <div class="rounded-full relative overflow-hidden shadow-lg">
+            <img src="./images/nareswari.png" alt="nareswari" width="200" />
+          </div>
+          <h1 class="font-bold text-xl text-[#FDCE28]">Nareswari Ayuningtyas</h1>
+          <h1 class="font-bold">Chief Marketing Officer</h1>
+          <div class="flex items-center text-[#FDCE28] gap-1.5">
+            <i class='bx bxl-instagram text-2xl'></i>
+            <p class="w-fit bg-[#608922]  p-1 rounded">@naireshaa</p>
+          </div>
+          <p>regulate market research, communication strategies, digital campaigns, and relationships with customers to
+            increase sales and loyalty.</p>
+        </div>
+        <div
+          class="transition-all shadow-lg rounded-lg p-10 w-auto text-center flex flex-col items-center bg-[#7aaa31] hover:scale-105 gap-1">
+          <div class="rounded-full relative overflow-hidden shadow-lg">
+            <img src="./images/arsya.png" alt="arsya" width="200" />
+          </div>
+          <h1 class="font-bold text-xl text-[#FDCE28]">Faiz Akbar Aryasatya</h1>
+          <h1 class="font-bold">Chief Technology Officer</h1>
+          <div class="flex items-center text-[#FDCE28] gap-1.5">
+            <i class='bx bxl-instagram text-2xl'></i>
+            <p class="w-fit bg-[#608922]  p-1 rounded">@fizhing29</p>
+          </div>
+          <p>Set the directions and development of the company's technology. The CTO led the engineering team, ensuring
+            that the system and infrastructure are running safely, efficiently and innovative. </p>
+        </div>
+        <div
+          class="transition-all shadow-lg rounded-lg p-10 w-auto text-center flex flex-col items-center bg-[#7aaa31] hover:scale-105 gap-1">
+          <div class="rounded-full relative overflow-hidden shadow-lg">
+            <img src="./images/beni.png" alt="beni" width="200" />
+          </div>
+          <h1 class="font-bold text-xl text-[#FDCE28]">Maynard Beni</h1>
+          <h1 class="font-bold">Chief Product Officer</h1>
+          <div class="flex items-center text-[#FDCE28] gap-1.5">
+            <i class='bx bxl-instagram text-2xl'></i>
+            <p class="w-fit bg-[#608922]  p-1 rounded">@benistefano_</p>
+          </div>
+          <p>Manage product development from idea to launch. CPO determines product, features, and user experience (user
+            experience) strategies.</p>
+        </div>
+        <div
+          class="transition-all shadow-lg rounded-lg p-10 w-auto text-center flex flex-col items-center bg-[#7aaa31] hover:scale-105 gap-1">
+          <div class="rounded-full relative overflow-hidden shadow-lg">
+            <img src="./images/hassan.png" alt="hassan" width="200" />
+          </div>
+          <h1 class="font-bold text-xl text-[#FDCE28]">Hassan Marsa T</h1>
+          <h1 class="font-bold">Chief Operating Officer</h1>
+          <div class="flex items-center text-[#FDCE28] gap-1.5">
+            <i class='bx bxl-instagram text-2xl'></i>
+            <p class="w-fit bg-[#608922]  p-1 rounded">@hassanmarsa_</p>
+          </div>
+          <p>Responsible for the daily operations of the company to run efficiently according to the target and ensures
+            that the CEO's strategy is carried out effectively in the field.</p>
+        </div>
+      </div>
+    </section>
+    <section id="vision" class="xl:py-20 xl:px-48 px-2 py-6 scroll-fade text-gray-600">
+      <h1 class="font-bold text-5xl text-center mb-16 scroll-fade">Our Vision & Mission</h1>
+      <div class="flex xl:flex-row flex-col justify-center gap-10 text-[#FDCE28]">
+        <div class="rounded-3xl shadow-lg p-10 bg-[#7aaa31] xl:w-1/2 scroll-fade">
+          <h1 class="font-bold text-4xl mb-4 scroll-fade">Vision</h1>
+          <p class="text-white scroll-fade">
+            Becoming a reliable and ethical leading platform in providing
+            AI-based weather and analytics data to increase sustainable
+            agricultural productivity in Indonesia and surrounding areas.
+          </p>
+        </div>
+        <div class="rounded-3xl shadow-lg p-10 bg-[#7aaa31] xl:w-1/2 scroll-fade">
+          <h1 class="font-bold text-4xl mb-4 scroll-fade">Mission</h1>
+          <ul class="list-disc space-y-2 text-white scroll-fade">
+            <li>
+              Provides High Precision Data: Developing and operating the
+              Agromett weather station networks capable of collecting,
+              analyzing, and predicting real-time agricultural micro-time
+              conditions and hiperlokal with tested accuracy.
+            </li>
+            <li>
+              Encouraging the Intelligent Decision Making: Converting raw data
+              into actionable agronomic recommendations (for example, an
+              optimal irrigation schedule, an early warning of pests/diseases,
+              and best planting time) for farmers through an intuitive
+              interface.
+            </li>
+            <li>
+              Improving Farmers’ Efficiency and Productivity: Helping
+              farmers in saving resources (water, fertilizers, pesticides) and
+              minimizing the risk of crop failure due to extreme weather, thus
+              increasing their harvest and profitability.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="news" class="xl:px-48 px-2 xl:py-20 py-10">
+      <div class="mb-16 space-y-4 scroll-fade">
+        <h1 class="font-bold text-4xl text-center">Updated News</h1>
+        <p class="text-gray-600 text-center text-lg">Stay Updated with Agromett</p>
+      </div>
+      <div class="grid xl:grid-cols-3 grid-cols-1 items-center place-content-center xl:gap-28 gap-10">
+        <div class="rounded-lg w-fit relative overflow-hidden shadow-lg bg-white">
+          <img src="./images/alat-aws.png" alt="aws">
+          <div class="p-6 flex flex-col gap-3">
+            <h1 class="text-gray-600">November 28, 2025</h1>
+            <h1 class="font-bold text-lg">Stasiun Cuaca Otomatis Bantu Pertanian Hadapi Perubahan Iklim</h1>
+            <p class="text-gray-600">AWS membantu petani menghadapi musim tak menentu dengan data suhu, hujan, dan angin
+              yang akurat.</p>
+            <a href="aws.html" class="transition-all text-[#7aaa31] font-bold hover:text-[#608922]">Read More →</a>
           </div>
         </div>
-      </section>
-      <section id="partners" class="lg:px-24 px-2 lg:py-20 py-10 w-screen bg-[#FDCE28]">
-        <h1 class="text-3xl font-bold lg:mb-16 mb-4 text-center scroll-fade">Our Partners</h1>
-        <div class="flex lg:flex-row flex-col items-center place-content-center self-center gap-10 scroll-fade">
-          <img
-            src="./images/enuma.png"
-            alt="enumatech"
-            width="250"
-            height="50"
-          />
-          <img
-            src="./images/mersif.png"
-            alt="mersiflab"
-            width="200"
-            height="50"
-          />
-          <img
-            src="./images/logoTOM.png"
-            alt="logo tom"
-            width="200"
-            height="50"
-          />
-        </div>
-      </section>
-      <section id="sdgs" class="lg:px-24 px-2 lg:py-20 py-10 scroll-fade">
-        <h1 class="text-center text-4xl lg:mb-16 mb-4 font-bold scroll-fade">Supporting SDGs</h1>
-        <div class="flex flex-col lg:flex-row items-center justify-center gap-10 scroll-fade">
-          <div class="flex flex-col items-center gap-2 text-center w-56 bg-[#FDCE28] p-4 rounded-lg shadow-lg">
-            <img src="./images/sdgs 2.png" alt="sdgs" width="100">
-            <h1 class="font-bold text-lg">Zero Hunger</h1>
-            <p class="text-gray-600">Ending hunger by increasing agricultural productivity</p>
-          </div>
-          <div class="flex flex-col items-center gap-2 text-center w-56 bg-[#FDCE28] p-4 rounded-lg shadow-lg">            
-            <img src="./images/sdgs 9.png" alt="sdgs" width="100">
-            <h1 class="font-bold text-lg">Industry & Innovation</h1>
-            <p class="text-gray-600">Building infrastructure and encouraging agricultural innovation</p>
-          </div>
-          <div class="flex flex-col items-center gap-2 text-center w-56 bg-[#FDCE28] p-4 rounded-lg shadow-lg">            
-            <img src="./images/sdgs 13.png" alt="sdgs" width="100">
-            <h1 class="font-bold text-lg">Zero Hunger</h1>
-            <p class="text-gray-600">Fighting climate change through adaptive agriculture</p>
+        <div class="rounded-lg w-fit relative overflow-hidden shadow-lg bg-white">
+          <img src="./images/alat-aws.png" alt="aws">
+          <div class="p-6 flex flex-col gap-3">
+            <h1 class="text-gray-600">November 28, 2025</h1>
+            <h1 class="font-bold text-lg">Stasiun Cuaca Otomatis Bantu Pertanian Hadapi Perubahan Iklim</h1>
+            <p class="text-gray-600">AWS membantu petani menghadapi musim tak menentu dengan data suhu, hujan, dan angin
+              yang akurat.</p>
+            <a href="aws.html" class="transition-all text-[#7aaa31] font-bold hover:text-[#608922]">Read More →</a>
           </div>
         </div>
-      </section>
-    </main>
-    <footer class="py-16 bg-white border-t border-gray-200">
-        <div class="grid md:grid-cols-4 gap-12 mb-12 items-center container mx-auto px-6">
-          <div class="md:col-span-2">
-            <img src="./images/Agormett - logo.png" alt="logo" width="150" />
-            <p class="lg:mt-10 mt-2 text-gray-600">
-              AgroMETT is an innovative, low-cost, AI-assisted smart weather
-              intelligence system specifically designed to help farmers monitor
-              local environmental conditions in real time and make better
-              agricultural decisions.
-            </p>
-            <div class="lg:mt-10 mt-2 flex gap-4">
-              <a href="https://www.instagram.com/agromett.id/" target="_blank" class="transition-all p-3 text-center flex w-fit items-center rounded-lg text-[#7aaa31] hover:bg-[#7aaa31] hover:text-[#FDCE28]">
-                <i class="bx bxl-instagram text-2xl"></i>
-              </a>
-            </div>
+        <div class="rounded-lg w-fit relative overflow-hidden shadow-lg bg-white">
+          <img src="./images/alat-aws.png" alt="aws">
+          <div class="p-6 flex flex-col gap-3">
+            <h1 class="text-gray-600">November 28, 2025</h1>
+            <h1 class="font-bold text-lg">Stasiun Cuaca Otomatis Bantu Pertanian Hadapi Perubahan Iklim</h1>
+            <p class="text-gray-600">AWS membantu petani menghadapi musim tak menentu dengan data suhu, hujan, dan angin
+              yang akurat.</p>
+            <a href="aws.html" class="transition-all text-[#7aaa31] font-bold hover:text-[#608922]">Read More →</a>
           </div>
-          <div class="">
-            <h1 class="mb-4 font-bold text-lg">Quick Links</h1>
-            <div class="flex flex-col gap-4 text-gray-600">
-              <a href="#" class="hover:text-gray-700 hover:font-bold transition-all">Home</a>
-              <a href="#" class="hover:text-gray-700 hover:font-bold transition-all">About Us</a>
-              <a href="#" class="hover:text-gray-700 hover:font-bold transition-all">Product</a>
-              <a href="#" class="hover:text-gray-700 hover:font-bold transition-all">News</a>
-              <a href="#" class="hover:text-gray-700 hover:font-bold transition-all">Team</a>
-            </div>
+        </div>
+        <div class="rounded-lg w-fit relative overflow-hidden shadow-lg bg-white">
+          <img src="./images/alat-aws.png" alt="aws">
+          <div class="p-6 flex flex-col gap-3">
+            <h1 class="text-gray-600">November 28, 2025</h1>
+            <h1 class="font-bold text-lg">Stasiun Cuaca Otomatis Bantu Pertanian Hadapi Perubahan Iklim</h1>
+            <p class="text-gray-600">AWS membantu petani menghadapi musim tak menentu dengan data suhu, hujan, dan angin
+              yang akurat.</p>
+            <a href="aws.html" class="transition-all text-[#7aaa31] font-bold hover:text-[#608922]">Read More →</a>
           </div>
-          <div class="">
-            <h1 class="font-bold text-lg mb-4">Contact</h1>
-            <div class="text-gray-600 flex flex-col gap-4">
-              <div class="flex items-center">
-                <i class="bx bx-envelope text-xl text-[#7aaa31] mr-4"></i>
+        </div>
+        <div class="rounded-lg w-fit relative overflow-hidden shadow-lg bg-white">
+          <img src="./images/alat-aws.png" alt="aws">
+          <div class="p-6 flex flex-col gap-3">
+            <h1 class="text-gray-600">November 28, 2025</h1>
+            <h1 class="font-bold text-lg">Stasiun Cuaca Otomatis Bantu Pertanian Hadapi Perubahan Iklim</h1>
+            <p class="text-gray-600">AWS membantu petani menghadapi musim tak menentu dengan data suhu, hujan, dan angin
+              yang akurat.</p>
+            <a href="aws.html" class="transition-all text-[#7aaa31] font-bold hover:text-[#608922]">Read More →</a>
+          </div>
+        </div>
+        <div class="rounded-lg w-fit relative overflow-hidden shadow-lg bg-white">
+          <img src="./images/alat-aws.png" alt="aws">
+          <div class="p-6 flex flex-col gap-3">
+            <h1 class="text-gray-600">November 28, 2025</h1>
+            <h1 class="font-bold text-lg">Stasiun Cuaca Otomatis Bantu Pertanian Hadapi Perubahan Iklim</h1>
+            <p class="text-gray-600">AWS membantu petani menghadapi musim tak menentu dengan data suhu, hujan, dan angin
+              yang akurat.</p>
+            <a href="aws.html" class="transition-all text-[#7aaa31] font-bold hover:text-[#608922]">Read More →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section itemid="get-touch" class="xl:py-20 py-6 scroll-fade" id="contact">
+      <div class="text-center mb-16">
+        <h1 class="text-3xl font-bold mb-4">
+          Ready to Monitor your Environmental Conditions?
+        </h1>
+        <p class="text-gray-600 text-lg">Let's Discuss with Us</p>
+      </div>
+      <div class="xl:px-48 p-2 flex flex-col xl:flex-row justify-center gap-10">
+        <div class="p-10 rounded-3xl bg-[#7aaa31] text-white xl:w-1/3 h-fit">
+          <h1 class="text-2xl font-bold mb-8 text-[#FDCE28]">Get in Touch</h1>
+          <div class="space-y-6">
+            <div class="flex space-x-4">
+              <div class="p-3 text-white bg-[#a7dd5773] flex w-fit rounded-lg items-center">
+                <i class="bx bx-envelope text-xl text-[#FDCE28]"></i>
+              </div>
+              <div>
+                <span class="font-bold -mb-4 text-[#FDCE28]">Email</span>
                 <p>agromett.official@gmail.com</p>
               </div>
-              <div class="flex items-center">
-                <i class="bx bxl-instagram text-xl text-[#7aaa31] mr-4"></i><p>@agromett.id</p>
+            </div>
+            <div class="flex space-x-4">
+              <div class="p-3 text-white bg-[#a7dd5773] flex w-fit rounded-lg items-center">
+                <i class="bx bxl-instagram text-xl text-[#FDCE28]"></i>
+              </div>
+              <div>
+                <span class="font-bold -mb-4 text-[#FDCE28]">Instagram</span>
+                <p>@agromett</p>
               </div>
             </div>
           </div>
-      </footer>
-  </body>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const menuBtn = document.getElementById('menu')
-      const closeBtn = document.getElementById('close')
-      const menuList = document.getElementById('menu-list')
-      const observer = new IntersectionObserver((entries) => {
+        </div>
+        <div class="rounded-3xl shadow-lg p-10 bg-white space-y-6">
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="">
+              <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">Name</label>
+              <input class="w-full px-4 py-3 border border-gray-300 rounded-xl" type="text" />
+            </div>
+            <div class="">
+              <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">Email</label>
+              <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-xl" />
+            </div>
+          </div>
+          <div class="">
+            <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">Message</label>
+            <textarea id="message" rows="5" required="" class="w-full px-4 py-3 border border-gray-300 rounded-xl"
+              placeholder="Tell us about your needs..."></textarea>
+          </div>
+          <button
+            class="w-full bg-[#7aaa31] text-[#FDCE28] py-4 rounded-xl font-semibold hover:bg-[#608922] transition-all transform hover:scale-105 shadow-lg">Send
+            Message</button>
+        </div>
+      </div>
+    </section>
+    <section id="partners" class="xl:px-24 px-2 xl:py-20 py-10 w-screen bg-[#FDCE28]">
+      <h1 class="text-3xl font-bold xl:mb-16 mb-4 text-center scroll-fade">Our Partners</h1>
+      <div class="flex xl:flex-row flex-col items-center place-content-center self-center gap-10 scroll-fade">
+        <img src="./images/enuma.png" alt="enumatech" width="250" height="50" />
+        <img src="./images/mersif.png" alt="mersiflab" width="200" height="50" />
+        <img src="./images/logoTOM.png" alt="logo tom" width="200" height="50" />
+      </div>
+    </section>
+    <section id="sdgs" class="xl:px-24 px-2 xl:py-20 py-10 scroll-fade">
+      <h1 class="text-center text-4xl xl:mb-16 mb-4 font-bold scroll-fade">Supporting SDGs</h1>
+      <div class="flex flex-col xl:flex-row items-center justify-center gap-10 scroll-fade">
+        <div class="flex flex-col items-center gap-2 text-center w-56 bg-[#FDCE28] p-4 rounded-lg shadow-lg">
+          <img src="./images/sdgs 2.png" alt="sdgs" width="100">
+          <h1 class="font-bold text-lg">Zero Hunger</h1>
+          <p class="text-gray-600">Ending hunger by increasing agricultural productivity</p>
+        </div>
+        <div class="flex flex-col items-center gap-2 text-center w-56 bg-[#FDCE28] p-4 rounded-lg shadow-lg">
+          <img src="./images/sdgs 9.png" alt="sdgs" width="100">
+          <h1 class="font-bold text-lg">Industry & Innovation</h1>
+          <p class="text-gray-600">Building infrastructure and encouraging agricultural innovation</p>
+        </div>
+        <div class="flex flex-col items-center gap-2 text-center w-56 bg-[#FDCE28] p-4 rounded-lg shadow-lg">
+          <img src="./images/sdgs 13.png" alt="sdgs" width="100">
+          <h1 class="font-bold text-lg">Zero Hunger</h1>
+          <p class="text-gray-600">Fighting climate change through adaptive agriculture</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="py-16 bg-white border-t border-gray-200">
+    <div class="grid md:grid-cols-4 gap-12 mb-12 items-center container mx-auto px-6">
+      <div class="md:col-span-2">
+        <img src="./images/Agormett - logo.png" alt="logo" width="150" />
+        <p class="xl:mt-10 mt-2 text-gray-600">
+          AgroMETT is an innovative, low-cost, AI-assisted smart weather
+          intelligence system specifically designed to help farmers monitor
+          local environmental conditions in real time and make better
+          agricultural decisions.
+        </p>
+        <div class="xl:mt-10 mt-2 flex gap-4">
+          <a href="https://www.instagram.com/agromett.id/" target="_blank"
+            class="transition-all p-3 text-center flex w-fit items-center rounded-lg text-[#7aaa31] hover:bg-[#7aaa31] hover:text-[#FDCE28]">
+            <i class="bx bxl-instagram text-2xl"></i>
+          </a>
+        </div>
+      </div>
+      <div class="">
+        <h1 class="mb-4 font-bold text-lg">Quick Links</h1>
+        <div class="flex flex-col gap-4 text-gray-600">
+          <a href="#" class="hover:text-gray-700 hover:font-bold transition-all">Home</a>
+          <a href="#" class="hover:text-gray-700 hover:font-bold transition-all">About Us</a>
+          <a href="#" class="hover:text-gray-700 hover:font-bold transition-all">Product</a>
+          <a href="#" class="hover:text-gray-700 hover:font-bold transition-all">News</a>
+          <a href="#" class="hover:text-gray-700 hover:font-bold transition-all">Team</a>
+        </div>
+      </div>
+      <div class="">
+        <h1 class="font-bold text-lg mb-4">Contact</h1>
+        <div class="text-gray-600 flex flex-col gap-4">
+          <div class="flex items-center">
+            <i class="bx bx-envelope text-xl text-[#7aaa31] mr-4"></i>
+            <p>agromett.official@gmail.com</p>
+          </div>
+          <div class="flex items-center">
+            <i class="bx bxl-instagram text-xl text-[#7aaa31] mr-4"></i>
+            <p>@agromett.id</p>
+          </div>
+        </div>
+      </div>
+  </footer>
+</body>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const menuBtn = document.getElementById('menu')
+    const closeBtn = document.getElementById('close')
+    const menuList = document.getElementById('menu-list')
+    const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('scroll-show')
@@ -458,25 +412,28 @@
           entry.target.classList.remove('scroll-show')
         }
       })
-    }, {threshold: 0.2})
+    }, {
+      threshold: 0.2
+    })
 
     document.querySelectorAll('.scroll-fade').forEach((el) => observer.observe(el))
 
-      menuBtn.addEventListener('click', () => {
-        menuList.classList.remove('hidden')
-        setTimeout(() => {
-          menuList.classList.add('menu-open')
-          menuList.classList.remove('menu-closed')
-        }, 10)
-      })
-      closeBtn.addEventListener('click', () => {
-        menuList.classList.remove('menu-open')
-        setTimeout(() => {
-          menuList.classList.add('hidden')
-        }, 300)
-        menuList.classList.add('menu-closed')
-      })
-      
+    menuBtn.addEventListener('click', () => {
+      menuList.classList.remove('hidden')
+      setTimeout(() => {
+        menuList.classList.add('menu-open')
+        menuList.classList.remove('menu-closed')
+      }, 10)
     })
-  </script>
+    closeBtn.addEventListener('click', () => {
+      menuList.classList.remove('menu-open')
+      setTimeout(() => {
+        menuList.classList.add('hidden')
+      }, 300)
+      menuList.classList.add('menu-closed')
+    })
+
+  })
+</script>
+
 </html>
